@@ -1,13 +1,6 @@
-const pizzaTypes = new Array["Pepperonni", "Sausage", "Supreme", "Taco", "Cheese"];
+const pizzaTypes = ["Pepperonni", "Sausage", "Supreme", "Taco", "Cheese"];
 var select = document.getElementById("PizzaType"); 
 
-for(var i = 0; i < pizzaTypes.length; i++) {
-    var type = pizzaTypes[i];
-    var option = document.createElement("option");
-    option.textContent = type;
-    option.value = type;
-    select.appendChild(option);    
-}​
 var firstName = document.getElementById("firstName").value;
 var lastName = document.getElementById("lastName").value;
 var phone = document.getElementById("phoneNumber").value;
@@ -23,4 +16,18 @@ function setUpPage()
 {
 
 }
-window.addEventListener("load", setUpPage);*/
+*/
+function loadPizzas(){
+    for(var i = 0; i < pizzaTypes.length; i++) {
+        var option = document.createElement("option");
+        var t = pizzaTypes[i];
+        console.log(pizzaTypes[i]);
+        option.value = pizzaTypes[i];
+        option.textContent = pizzaTypes[i];
+        select.appendChild(option,t);
+       
+    }
+}
+
+window.addEventListener("load", loadPizzas);
+
