@@ -8,3 +8,19 @@ for(var i = 0; i < pizzaTypes.length; i++) {
     option.value = type;
     select.appendChild(option);    
 }​
+var firstName = document.getElementById("firstName").value;
+var lastName = document.getElementById("lastName").value;
+var phone = document.getElementById("phoneNumber").value;
+var submitOrder  = document.getElementById("submit");
+submitOrder.addEventListener("click", printOrder);
+/*
+function printOrder()
+{
+
+}
+
+function setUpPage()
+{
+
+}
+window.addEventListener("load", setUpPage);*/

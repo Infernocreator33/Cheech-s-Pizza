@@ -7,11 +7,14 @@
     <body>
             <script src="main.js"></script>
             <form>
-                Enter Your Name: 
-                <input type="text" name="CustomerName">
+                First Name: 
+                <input type="text" name="FirstName" id="firstName">
+                <br/><br/>
+                Last Name:
+                <input type="text" name="LastName" id="lastName">
                 <br/><br/>
                 Enter Your Phone Number: 
-                <input type="text" name="CustomerPhone">
+                <input type="text" name="CustomerPhone" id="phoneNumber">
                 <br/><br/>
                 
                 <select id="PizzaType">
@@ -31,7 +34,9 @@
                 <option>10</option>
             </select>
             <br/><br/>
-            <input type="button" name="submit" value="Submit Order">
+            <input type="radio" name="pickupOption" value="Delivery" checked>Delivery
+            <input type="radio" name="pickupOption" value="Carryout">Carryout <br/><br/>
+            <input type="button" id="submit" name="submit" value="Submit Order">
             </form>
            
     </body>
