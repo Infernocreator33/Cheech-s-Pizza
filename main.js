@@ -10,10 +10,8 @@ var submitOrder  = document.getElementById("submit");
 function printOrder()
 {
 
-}
+}*/
 
-
-*/
 function setUpPage()
 {
     for(var i = 0; i < pizzaTypes.length; i+=2) {
