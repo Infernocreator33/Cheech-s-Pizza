@@ -10,24 +10,31 @@
     </head>
     <body>            
             <form>
-                First Name: 
-                <input type="text" name="FirstName" id="firstName">
+                <fieldset>
+                <legend>Lilo's Pizza</legend>
+                <label for="fnam">Anthony Name:</label> 
+                <input type="text" name="fname" id="firstName" required>
+                <br/><br/> 
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lastName" >
                 <br/><br/>
-                Last Name:
-                <input type="text" name="LastName" id="lastName">
+                <label for="email">Email:</label> 
+                <input type="email" name="email" id="email" placeholder="example@yahoo.com" required>
                 <br/><br/>
-                Enter Your Phone Number: 
-                <input type="text" name="CustomerPhone" id="phoneNumber">
+                <label for="phone">Phone Number:</label> 
+                <input type="tel" name="phone" id="phoneNumber" placeholder="123-456-7890" required>
                 <br/><br/>
-                
+                <fieldset>
                 <select id="PizzaType"></select>
 
                 <br/><br/>
-            <select id="TotalPizzas"> </select>
+                <select id="TotalPizzas"> </select>
                 <br/><br/>
                 <input type="radio" name="pickupOption" value="Delivery" checked>Delivery
                 <input type="radio" name="pickupOption" value="Carryout">Carryout <br/><br/>
+                </fieldset>
                 <input type="button" id="submit" name="submit" value="Submit Order">
+                </fieldset>
             </form>   
             <script src="main.js"></script>           
     </body>

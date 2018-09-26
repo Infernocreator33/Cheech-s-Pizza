@@ -1,8 +1,6 @@
 const pizzaTypes = ["Pepperonni", 11, "Sausage", 11, "Supreme", 14, "Taco", 12, "Cheese", 10];
 var select = document.getElementById("PizzaType"); 
 var count = document.getElementById("TotalPizzas");  
-
-
 var firstName = document.getElementById("firstName").value;
 var lastName = document.getElementById("lastName").value;
 var phone = document.getElementById("phoneNumber").value;
