@@ -39,9 +39,18 @@ function addCustomTopping(e,ele) {
         option.value = ele.value;
         option.textContent = ele.value;
         select.add(option);  
-        custom.innerHTML = ""; 
-        console.log("custom");   
+        custom.value = ""; 
+        console.log(custom.value);
     }
+}
+
+function addByButton(){
+    var option = document.createElement("option");    
+    option.value = custom.value;
+    option.textContent = custom.value;
+    select.add(option);  
+    custom.value = ""; 
+    console.log(custom.value);    
 }
 
 window.addEventListener("load", setUpPage);
