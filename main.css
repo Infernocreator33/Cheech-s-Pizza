@@ -32,3 +32,27 @@ form, fieldset {
 .list, #custom{
     width: 200px;
 }
+
+input[type=text],input[type=email],input[type=tel]{
+    width: 200px;
+}
+
+#container {
+    width: 650px;   
+    margin: 0 auto;
+    background-color: #66ffff;
+}
+
+form {
+    width: 100%;    
+    margin: 0 auto;
+}
+
+#custom{
+    margin-left: 15px;
+}
+
+#addCustom{
+    width: 75px;
+    background-color: blue;
+}

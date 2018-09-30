@@ -7,7 +7,7 @@ var phone = document.getElementById("phoneNumber").value;
 var submitOrder  = document.getElementById("submit");
 var option = document.createElement("option");
 var custom = document.getElementById("custom");
-
+var addCustom = document.getElementById("addCustom");
 //submitOrder.addEventListener("click", printOrder);
 /*
 function printOrder()
@@ -38,7 +38,8 @@ function addCustomTopping(e,ele) {
         var option = document.createElement("option");
         option.value = ele.value;
         option.textContent = ele.value;
-        select.appendChild(option);   
+        select.add(option);  
+        custom.innerHTML = ""; 
         console.log("custom");   
     }
 }
