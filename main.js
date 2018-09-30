@@ -5,6 +5,9 @@ var firstName = document.getElementById("firstName").value;
 var lastName = document.getElementById("lastName").value;
 var phone = document.getElementById("phoneNumber").value;
 var submitOrder  = document.getElementById("submit");
+var option = document.createElement("option");
+var custom = document.getElementById("custom");
+
 //submitOrder.addEventListener("click", printOrder);
 /*
 function printOrder()
@@ -26,6 +29,17 @@ function setUpPage()
         option.value = i;
         option.textContent = i;
         count.appendChild(option, i);        
+    }
+}
+
+function addCustomTopping(e,ele) {
+    var code = (e.keyCode ? e.keyCode : e.which);
+    if(code == 13) {
+        var option = document.createElement("option");
+        option.value = ele.value;
+        option.textContent = ele.value;
+        select.appendChild(option);   
+        console.log("custom");   
     }
 }
 

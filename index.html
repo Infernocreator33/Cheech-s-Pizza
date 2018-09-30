@@ -11,7 +11,7 @@
     <body>            
             <form>
                 <fieldset>
-                <legend>Lilo's Pizza</legend>
+                <legend>Cheech's Pizza</legend>
                 <label for="fname">First Name:</label> 
                 <input type="text" name="fname" id="firstName" required>
                 <br/><br/> 
@@ -25,16 +25,19 @@
                 <input type="tel" name="phone" id="phoneNumber" placeholder="123-456-7890" required>
                 <br/><br/>
                 <fieldset>
-                <select id="PizzaType"></select>
-
+                <select class="list" id="PizzaType"></select>
+                <input  type="text" id="custom" placeholder="Custom Topping" onkeypress="addCustomTopping(event, this)">
                 <br/><br/>
-                <select id="TotalPizzas"> </select>
+                <select class="list" id="TotalPizzas">
+                    <option value="Choose How Many">Choose How Many</option> 
+                </select>
+                    
                 <br/><br/>
                 <input type="radio" name="pickupOption" value="Delivery" checked>Delivery
                 <input type="radio" name="pickupOption" value="Carryout">Carryout <br/><br/>
                 </fieldset>
                 <input type="button" id="submit" name="submit" value="Submit Order">
-                </fieldset>
+                
             </form>   
             <script src="main.js"></script>           
     </body>

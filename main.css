@@ -28,3 +28,7 @@ form, fieldset {
     background-color: gray;
     padding: 20px;
 }
+
+.list, #custom{
+    width: 200px;
+}
