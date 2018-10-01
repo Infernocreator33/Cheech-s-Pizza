@@ -1,8 +1,3 @@
-html{
-    background-color: oldlace;
-    
-}
-
 #bg {
     /* The image used */
     background-image: url("pizza.jpg");
@@ -76,5 +71,19 @@ form {
 }
 
 fieldset{
-    background-color: red;
+    background-color: red;    
+    display: block;
+    
+    text-align: center;
+}
+
+#fs2{
+    width: 350px;
+    display: block;
+    margin: 1.0em auto;
+    text-align: center;
+}
+
+#email{
+    margin-left: 30px;
 }

@@ -18,7 +18,7 @@
                     <input type="text" name="fname" id="firstName" required>
                     <br/><br/> 
                     <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lastName" >
+                    <input type="text" name="lname" id="lastName">
                     <br/><br/>
                     <label for="email">Email:</label> 
                     <input type="email" name="email" id="email" placeholder="example@yahoo.com">
@@ -27,10 +27,8 @@
                     <input type="tel" name="phone" id="phoneNumber" placeholder="123-456-7890" required>
                     <br/><br/>                
                     <fieldset id="fs2">
-                        <legend><h3>Choose Your Pizza</h3></legend>
+                        <legend id="phone"><h3>Choose Your Pizza</h3></legend>
                         <select class="list" id="PizzaType"></select>
-                        <input  type="text" id="custom" placeholder="Custom Topping" onkeypress="addCustomTopping(event, this)">
-                        <input type="button" id="addCustom" name="addCustom" value="Add" onclick="addByButton()">
                         <br/><br/>
                         <select class="list" id="TotalPizzas">
                             <option value="Choose How Many">Choose How Many</option> 
@@ -43,7 +41,8 @@
                         <input type="radio" name="pickupOption" value="Carryout">Carryout 
                         <br/><br/>
                     </fieldset>
-                    <input type="button" id="submit" name="submit" value="Submit Order" onclick="printOrder()">  
+                    
+                    <input type="button" id="submitOrder" name="submitOrder" value="Submit Order">  
                 </fieldset>              
             </form>   
         </div> 
