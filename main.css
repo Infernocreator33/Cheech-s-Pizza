@@ -1,5 +1,8 @@
+html{
+    background-color: oldlace;
+}
 input[type=text], input[type=email], input[type=tel], select {
-    width: 200px%;
+    width: 200px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -46,7 +49,6 @@ legend{
 form {
     width: 100%;    
     margin: 0 auto;
-    border: 0px darkred;
     background-color: darkred ;
 }
 
