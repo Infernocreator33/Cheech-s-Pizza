@@ -1,6 +1,21 @@
 html{
     background-color: oldlace;
+    
 }
+
+#bg {
+    /* The image used */
+    background-image: url("pizza.jpg");
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
 input[type=text], input[type=email], input[type=tel], select {
     width: 200px;
     padding: 12px 20px;
@@ -28,7 +43,6 @@ input[type=button]:hover {
 
 form, fieldset {
     border-radius: 5px;
-    background-color: gray;
     padding: 20px;
 }
 
@@ -49,7 +63,7 @@ legend{
 form {
     width: 100%;    
     margin: 0 auto;
-    background-color: darkred ;
+    background-color: rgb(112, 48, 24); ;
 }
 
 #custom{
@@ -62,5 +76,5 @@ form {
 }
 
 fieldset{
-    background-color: orangered;
+    background-color: red;
 }
