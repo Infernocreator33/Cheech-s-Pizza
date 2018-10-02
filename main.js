@@ -20,11 +20,11 @@ function printOrder(){
     let subtotal = t * cost;
     let tax =  subtotal * .076;
     let total = subtotal + tax;
-    receipt.value = "\n\n\nCustomer: " + fname.value + ' ' + lname.value + "\n" + "Email: " + email.value + "\n" 
-        + "Phone Number: " + phone.value + "\n\n\n\n" + "Type of Pizza: " + pizzaTypes[index] + " x" + t + "\n"+ "Crust: " 
-        + document.querySelector('input[name="crust"]:checked').value + "\n" 
-        + document.querySelector('input[name="pickupOption"]:checked').value +"\n\n\n" + "Subtotal: $" 
-        + subtotal.toFixed(2) + "\n" + "Tax: $" + tax.toFixed(2) + "\nTotal: $" + total.toFixed(2); 
+    receipt.value = "\n\n\n\n\n\n\n\nCustomer: " + fname.value + ' ' + lname.value + "\n" + "Email: " + email.value + "\n" 
+        + "Phone Number: " + phone.value + "\n\n\n\n" + "Type of Pizza: " + pizzaTypes[index] + " x" + t + "\n"
+        + "Crust: " + document.querySelector('input[name="crust"]:checked').value + "\n" 
+        + document.querySelector('input[name="pickupOption"]:checked').value +"\n\n\n\n" + "Subtotal: $" 
+        + subtotal.toFixed(2) + "\n" + "Sales Tax: $" + tax.toFixed(2) + "\nTotal: $" + total.toFixed(2); 
 }
 
 function setUpPage()

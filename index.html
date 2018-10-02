@@ -32,7 +32,7 @@
                             <select class="list" id="PizzaType"></select>
                             <br/><br/>
                             <select class="list" id="TotalPizzas">
-                                <option value="Choose How Many">Choose How Many</option> 
+                                <option value="Choose How Many" disabled>Choose How Many</option> 
                             </select>                    
                             <br/><br/>
                             <input type="radio" name="crust" value="Thin Crust" checked>Thin Crust
@@ -43,13 +43,14 @@
                             <br/><br/>
                         </fieldset>                    
                         <input type="button" id="submitOrder" name="submitOrder" value="Submit Order">  
-                    </fieldset>                                 
+                    </fieldset>                                
                 </form>                 
                 </div>
-                <div id="receiptCont">                
-                        <textarea id="receipt" disabled></textarea>
-                </div>                  
-            </div>             
+                                  
+            </div>  
+            <div id="receiptCont">                
+                <textarea id="receipt" disabled readonly></textarea>
+            </div>           
         </div> 
     <script src="main.js"></script>           
     </body>
