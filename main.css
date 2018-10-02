@@ -49,10 +49,16 @@ legend{
     width: 200px;
 }
 
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+
 #container {
     width: 650px;   
-    margin: 0 auto;
+    float: left;
     background-color: #66ffff;
+    float: middle;
 }
 
 form {
@@ -86,4 +92,19 @@ fieldset{
 
 #email{
     margin-left: 30px;
+}
+
+#receiptCont{
+    
+    margin-left: 15%;
+}
+
+#receipt{
+    width: 300px;
+    height: 400px;
+    margin-top: 485px;
+    float: right;
+    background-color: black;
+    color: white;
+    margin-right: 95px;
 }

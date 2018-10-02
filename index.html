@@ -10,43 +10,47 @@
     </head>
     <body>  
         <div id="bg">
-        <div id="container">       
-            <form>
-                <fieldset id="fs1">
-                    <legend><h1>Cheech's Pizza</h1></legend>
-                    <label for="fname">First Name:</label> 
-                    <input type="text" name="fname" id="firstName" required>
-                    <br/><br/> 
-                    <label for="lname">Last Name:</label>
-                    <input type="text" name="lname" id="lastName">
-                    <br/><br/>
-                    <label for="email">Email:</label> 
-                    <input type="email" name="email" id="email" placeholder="example@yahoo.com">
-                    <br/><br/>
-                    <label for="phone">Phone Number:</label> 
-                    <input type="tel" name="phone" id="phoneNumber" placeholder="123-456-7890" required>
-                    <br/><br/>                
-                    <fieldset id="fs2">
-                        <legend id="phone"><h3>Choose Your Pizza</h3></legend>
-                        <select class="list" id="PizzaType"></select>
+            <div id="wrapper">   
+                <div  id="container">
+                <form>
+                    <fieldset id="fs1">
+                        <legend><h1>Cheech's Pizza</h1></legend>
+                        <label for="fname">First Name:</label> 
+                        <input type="text" name="fname" id="firstName" required>
+                        <br/><br/> 
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lname" id="lastName">
                         <br/><br/>
-                        <select class="list" id="TotalPizzas">
-                            <option value="Choose How Many">Choose How Many</option> 
-                        </select>                    
+                        <label for="email">Email:</label> 
+                        <input type="email" name="email" id="email" placeholder="example@yahoo.com">
                         <br/><br/>
-                        <input type="radio" name="crust" value="Thin Crust" checked>Thin Crust
-                        <input type="radio" name="crust" value="Thick Crust">Thick Crust
-                        <br/><br/>
-                        <input type="radio" name="pickupOption" value="Delivery" checked>Delivery
-                        <input type="radio" name="pickupOption" value="Carryout">Carryout 
-                        <br/><br/>
-                    </fieldset>
-                    
-                    <input type="button" id="submitOrder" name="submitOrder" value="Submit Order">  
-                </fieldset>              
-            </form>   
+                        <label for="phone">Phone Number:</label> 
+                        <input type="tel" name="phone" id="phoneNumber" placeholder="123-456-7890" required>
+                        <br/><br/>                
+                        <fieldset id="fs2">
+                            <legend id="phone"><h3>Choose Your Pizza</h3></legend>
+                            <select class="list" id="PizzaType"></select>
+                            <br/><br/>
+                            <select class="list" id="TotalPizzas">
+                                <option value="Choose How Many">Choose How Many</option> 
+                            </select>                    
+                            <br/><br/>
+                            <input type="radio" name="crust" value="Thin Crust" checked>Thin Crust
+                            <input type="radio" name="crust" value="Thick Crust">Thick Crust
+                            <br/><br/>
+                            <input type="radio" name="pickupOption" value="Delivery" checked>Delivery
+                            <input type="radio" name="pickupOption" value="Carryout">Carryout 
+                            <br/><br/>
+                        </fieldset>                    
+                        <input type="button" id="submitOrder" name="submitOrder" value="Submit Order">  
+                    </fieldset>                                 
+                </form>                 
+                </div>
+                <div id="receiptCont">                
+                        <textarea id="receipt"></textarea>
+                </div>                  
+            </div>             
         </div> 
-        </div> 
-        <script src="main.js"></script>           
+    <script src="main.js"></script>           
     </body>
 </html>
