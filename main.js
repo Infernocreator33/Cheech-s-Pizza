@@ -11,6 +11,8 @@ var option = document.createElement("option");
 var custom = document.getElementById("custom");
 var addCustom = document.getElementById("addCustom");
 var email = document.getElementById("email");
+var receiptCont = document.getElementById("receiptCont");
+var container = document.getElementById("container");
 submitOrder.addEventListener("click", printOrder);
 
 function printOrder(){    
@@ -25,7 +27,8 @@ function printOrder(){
         + "Phone Number: " + phone.value + "\n\n\n\n" + "Type of Pizza: " + pizzaTypes[index] + " x" + t + "\n"
         + "Crust: " + document.querySelector('input[name="crust"]:checked').value + "\n" 
         + document.querySelector('input[name="pickupOption"]:checked').value +"\n\n\n\n" + "Subtotal: $" 
-        + subtotal.toFixed(2) + "\n" + "Sales Tax: $" + tax.toFixed(2) + "\nTotal: $" + total.toFixed(2); 
+        + subtotal.toFixed(2) + "\n" + "Sales Tax: $" + tax.toFixed(2) + "\nTotal: $" + total.toFixed(2);
+    receiptCont.style.visibility = "visible";
 }
 
 function setUpPage()

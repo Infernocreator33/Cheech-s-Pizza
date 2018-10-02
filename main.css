@@ -46,7 +46,7 @@ legend{
 
 #wrapper{
     width: 80%;    
-    margin: 0 auto;
+    margin: 0 auto;    
 }
 
 #container {
@@ -54,7 +54,6 @@ legend{
     height: 805px;
     float: left;
     background-color: #66ffff;
-    float: middle;
 }
 
 form {
@@ -94,6 +93,7 @@ fieldset{
 
 #receiptCont{    
     margin-left: 15%;
+    visibility: hidden;
 }
 
 #receipt{
